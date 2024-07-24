@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: "Bebas Neue", sans-serif;   */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* font-family: "Josefin Sans", sans-serif; */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(60deg, #130c18, #130c18ea), url(assets/bbg3.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    width: 750px;
+    min-width: 700px;
+    height: 50vh;
+    background: linear-gradient(10deg, #382a52, #382a52ea), url(assets/bg.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #251642;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+}
+.me img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.me h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    margin: 5px 0;
+}
+.me p {
+    font-family: "Josefin Sans", sans-serif;
+    width: 80%;
+    color: white;
+    margin: 5px 0;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+    width: 70%;
+}
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    border-radius: 25px 25px 0 0;
+}
+.links svg {
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+.pinned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #5b4781;
+    border-radius: 25px;
+    transition: 0.1s;
+}
+.pinned:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.pinned h1{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+.pinned span {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.pin1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.pin2 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+.pin1 .bg {
+    background: linear-gradient(120deg, #5865F2, #3b45b6);
+}
+.pin2 .bg {
+    background: #833ab4;
+  background: linear-gradient(
+    160deg,
+    #833ab4,#fd1d1d,#fcb045)
+}
+
+.extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #5b4781;
+    transition: 0.2s;
+}
+.extra svg {
+    width: 30px;
+    height: 30px;
+}
+
+.extracont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.extra:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
